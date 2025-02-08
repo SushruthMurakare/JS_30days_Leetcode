@@ -1,0 +1,17 @@
+What is typescript ?
+Created at microsoft to address some shortcoming of javascript
+
+It is build on top of javascript
+Helps us build more robost application
+
+Javascript is a dynamically typed language means, you can assign a different data type value to the variable which was initialzed as some other data type
+let a = 0
+a = 'sushruth'
+
+By this the application might behave
+
+Typescript is Javascript with type checking
+
+Transpilation - > Converting TS to JS because the browsers dont understand TS
+You should be more disciplines when writing code with TS
+
