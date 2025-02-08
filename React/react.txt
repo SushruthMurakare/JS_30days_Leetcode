@@ -1,0 +1,49 @@
+React Interview 
+
+Transpiler coverts JSX to JS so that browser can read it 
+MVC model - Model View Controller (divide app into parts for development)
+JSX - javascript XML, can write html in react
+Functional and Class component
+Virtual dom is a copy of actual DOM - only updates components that are changed not everything
+e.preventDefault() -> it prevents default behavior like refreshing or navigating
+Key is a special string for lists that are unique for each list item
+Render method - present in the class component and the JSX is returned inside this method
+HOC - they take a component and returns and enhanced version of it, let's say u want to apply same logic to different component
+Functional component - stateless , not anymore after the hooks like useState
+React is one way binding - parent to child
+Conditional rendering - {isLoggedIn == false ? <DisplayLoggedOut /> : <DisplayLoggedIn />}
+React router - allows to change the browser URL path - but in nextjs you can navigate according to file
+Single page app - only one path in the browser
+Life cycle - didmount, didupdate, willUnmount
+Ref - to access a DOM element or element in your component
+React.Fragment <></> - group elements without adding a new div element
+ Prop drilling  - wrap the parent with  <ContextProvider>
+Custom hook
+Optimize react - lazy load, fragment, render 
+Context API -  instead of doing prop drilling you can create a context and access it using useContext hook 
+CORS - when you want to make request to server deployed in a different domain
+Axios -  mainly used to send asynchronous HTTP requests to REST endpoints This library is very useful to perform CRUD operations.
+Flux in redux - Redux is improved version of flux
+Pure components - can be achieved using useMemo , so that the component will  not re render until the state or prop is changed
+Inline conditional expression - writing if or ternary or && to render some element
+{true && <>some element<>}
+Controlled and uncontrolled components - about forms
+Uncontrolled  - We take help of DOM to control form inputs by using ref
+Controlled - we use useState and control the inputs of the form
+This is better approach because we control by events like onChange but in uncontrolled its not possible
+Lifting state up - passing state from child to parent
+Children prop - You can pass the props inside the 2 tags of your component and access it as props.children , without specifying the prop name as children
+It is usually used to wrap multiple components
+
+Redux
+Redux  - state management tool - single store for the complete app
+Redux store is immutable so to change any state we create a new state by passing current state and action to the reducer
+Slice will have the initial state of the redux states
+Reducer functions take the action and current state 
+Use useSelector hook and access the redux 
+We have a function called combineReducers in redux to combine the reducers 
+To change the app data we need to dispatch an Action to the store using usedispatch hook where we send the payload and the action name
+We have redux dev tool browser extension
+Action is object , Reducer is a function
+Redux optimizes re-renders by using selectors and memoization.
+When it comes to large applications redux provides better advantage over context api, context api re renders the components even if it is not using the state but redux will not do that

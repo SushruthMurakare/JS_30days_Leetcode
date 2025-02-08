@@ -1,0 +1,17 @@
+
+HTML
+
+  Standard language for web page creation
+HTML5 - updated version of HTML
+MultiMedia support, better form input, enhanced compatibility
+Tags
+HTML structure
+<!DOCTYPE> - tells the browser about interpreting HTML code 
+HTML entity - they are special code to write some symbol or character
+CSS box model - margin, padding, border, content
+Responsive design - based on screen width, use flexbox, use %, em and rem 
+Pseudo classes - :hover ,  define a special state
+Pseudo elements - ::before, style specific part of element
+CSS float - used for alignment
+Cross browser compatibility - thorough testing across browsers , eg: fire fox arranges the data in alphabetical order
+CSS sprite - multiple 

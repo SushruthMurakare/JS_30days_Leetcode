@@ -1,0 +1,59 @@
+Typescript
+
+Data types - string, number, boolean, null, undefined, any, void
+Arrays, enums, classes, interface
+interface User {
+ name: string; 
+age: number; 
+isAdmin?: boolean; // Optional property
+ } 
+Interface is a syntax
+Var, let, const
+Let variable_name : data-type = value
+Function funcName(myname: String): String {
+Return `Hi ${myName}`}
+You have the specify the arguments data type and the data type of the value that the function returns
+Any - when the data is coming from other resouces like API call or user entered data. In that case, you may not aware of the type of the data so you can use the any data type
+Browser cannot read TS , so every time you run TS is first converted into JS and then executed
+TS shows error in compile time whereas JS shows in run time
+Void - used for functions that return nothing , when used for variable it can only store null or undefined values
+Declare obj in TS
+let obj : {name: string, age?: number} = {
+name : ‘sushruth’ } // age is option
+Null, undefined, not defined
+Arrays in TS : can only store the multiple values of single kind of data type
+Compile TS -> tsc filename.ts
+Ts vs tsx - > .ts files are used to type pure typescript code whereas .tsx files are used to write both jsx and ts in the file
+“In” operator - > to check if a property is present in the object
+const user = { name: "Sushruth", age: 24 }; 
+console.log("name" in user); // true
+Union types - allows the variable to have multiple possible types
+Let variable : string | number | boolean;
+Type alias - you can give a new name for a data type for a combined type
+type combinedType = number | boolean
+Arrow function 
+const arrfunc =  (name: string): string => {
+return name;
+}
+
+Optional parameter - const func(name?: string): void{}
+Never type - represents value that never occurs, example : when a function throws error and nothing else
+function throwError(message: string): never {
+  throw new Error(message);
+}
+Enum - create a collection of constants, starts from 0, but you can specify the initial number to start from
+enum demoEnum{
+  milk = 1,
+    curd,
+    butter,
+    cheese
+}
+let btr: demoEnum = demoEnum.butter;
+console.log(btr)
+// Prints: 3
+
+Parameter destructuring
+Const func({name, age} : {name: string, age: number}){ }
+Tsconfig.json - to configure the compiler options like, JS version to convert, strict, plugins like nextjs
+
+
